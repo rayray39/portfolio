@@ -7,7 +7,7 @@ function App() {
         width: '50%',
         display:'flex',
         flexDirection:'column',
-        // alignItems:'center',
+        alignItems:'center',
         justifyContent:'center',
         position:'fixed',
         transform: 'translate(50%, 0)',
