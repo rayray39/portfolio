@@ -4,7 +4,7 @@ import { Avatar, Box, Stack } from "@mui/material"
 function Header() {
     const MAIN_HEADER_FONTSIZE = '50px';
     const SUB_HEADER_FONTSIZE = '30px';
-    const AVATAR_DIAMETER = 186;
+    const AVATAR_DIAMETER = 178;
 
     return <>
         <Stack direction={"row"} >
