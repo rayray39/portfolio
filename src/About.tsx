@@ -19,7 +19,7 @@ function About() {
             }}>
                 I'm passionate about building innovative fullstack applications and robotics development.
                 I've a solid background in engineering, computer science and robotics.
-                I'm currently working on Peng, a no nonsense dating platform for the serious.
+                I'm currently working on <a href="https://github.com/rayray39/peng">Peng, a no nonsense dating platform for the serious</a>.
             </Box>
         </Stack>
     </>
