@@ -6,7 +6,8 @@ function Header() {
         <Stack direction={"row"} >
             <Stack>
                 <Box sx={{
-                    fontSize:'50px'
+                    fontSize:'50px',
+                    fontWeight:'bold'
                 }}>
                     Hi, I'm Rayner 👋🏼
                 </Box>
@@ -19,7 +20,7 @@ function Header() {
             </Stack>
 
             <Box>
-                <Avatar sx={{ width:190, height:190}} alt="Rayner Lim" src="./src/assets/rayray39_2.jpg" />
+                <Avatar sx={{ width:186, height:186}} alt="Rayner Lim" src="./src/assets/rayray39_2.jpg" />
             </Box>
         </Stack>
     </>
