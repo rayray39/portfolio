@@ -1,5 +1,6 @@
 import { Avatar, Box, Stack } from "@mui/material"
 
+// main header section - includes titles and avatar
 function Header() {
     return <>
         <Stack direction={"row"} >
