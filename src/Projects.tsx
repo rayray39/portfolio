@@ -44,9 +44,18 @@ function Projects() {
                         Peng
                     </Typography>
                     <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                        species, ranging across all continents except Antarctica
+                        Peng is a no nonsense dating platform designed for those looking to make a serious connection.
+                        Features include authentication via JWT (Json Web Tokens), real-time messaging, interactive
+                        and dynamic swiping features.
                     </Typography>
+                    <Stack direction={'row'} spacing={2} sx={{ marginTop:'10px'}}>
+                        <Chip label='ReactJS'/>
+                        <Chip label='Express.JS'/>
+                        <Chip label='SQLite3'/>
+                        <Chip label='RESTful APIs'/>
+                        <Chip label='Material UI'/>
+                        <Chip label='Vercel'/>
+                    </Stack>
                 </CardContent>
             </Card>
         </Stack>
