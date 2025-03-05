@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, CardMedia, Chip, Stack, Typography } from "@mui/material"
+import { Box, Button, Card, CardActions, CardContent, CardMedia, Chip, Stack, Typography } from "@mui/material"
 
 function Projects() {
     // const SMALL_SECTION_FONTSIZE = '30px';
@@ -12,6 +12,7 @@ function Projects() {
         <CustomChip label="Material UI" />,
         <CustomChip label="Vercel" />
     ]
+    const pengGithub = 'https:github.com/rayray39/peng';
 
     const novellyChipLabels = [
         <CustomChip label="ReactJS" />,
@@ -21,6 +22,7 @@ function Projects() {
         <CustomChip label="RESTful APIs" />,
         <CustomChip label="React Bootstrap" />,
     ]
+    const novellyGithub = 'https:github.com/rayray39/novelly';
 
     const bredChipLabels = [
         <CustomChip label="ReactJS" />,
@@ -30,6 +32,7 @@ function Projects() {
         <CustomChip label="RESTful APIs" />,
         <CustomChip label="Material UI" />,
     ]
+    const bredGithub = 'https:github.com/rayray39/bred';
 
     return <>
         <Stack sx={{
@@ -68,6 +71,7 @@ function Projects() {
                     Features include authentication via JWT (Json Web Tokens), real-time messaging, interactive
                     and dynamic swiping features."
                     customChipLabels={pengChipLabels}
+                    githubRepoLink={pengGithub}
                 />
                 <CustomCard 
                     imagePath="/src/assets/novelly_logo.jpg" 
@@ -76,6 +80,7 @@ function Projects() {
                     resources with features like book browsing, borrowing and returning, and adding personalized notes to 
                     your wishlist favorites. It interacts with the Google Books API for book data."
                     customChipLabels={novellyChipLabels}
+                    githubRepoLink={novellyGithub}
                 />
                 <CustomCard 
                     imagePath="/src/assets/bred_logo.jpg" 
@@ -84,6 +89,7 @@ function Projects() {
                     streamline expense tracking across projects, visualize spending patterns with dynamic charts, and 
                     provide actionable insights to make data-driven decisions effortlessly."
                     customChipLabels={bredChipLabels}
+                    githubRepoLink={bredGithub}
                 />
             </Stack>
         </Stack>
@@ -92,8 +98,13 @@ function Projects() {
 
 export default Projects
 
-function CustomCard({ imagePath, title, description, customChipLabels }:
-        { imagePath:string, title:string, description:string, customChipLabels:React.ReactNode[] }) {
+function CustomCard({ imagePath, title, description, customChipLabels, githubRepoLink }:
+        { imagePath:string, title:string, description:string, customChipLabels:React.ReactNode[], githubRepoLink:string }) {
+
+    const visitGithubRepo = () => {
+        window.open(githubRepoLink, '_blank')
+    }
+    
     return <Card variant="outlined" sx={{ width:'100%' }}>
         <CardMedia
             sx={{ height: 220 }}
@@ -111,6 +122,11 @@ function CustomCard({ imagePath, title, description, customChipLabels }:
                 {customChipLabels}
             </Stack>
         </CardContent>
+        <CardActions>
+            <Button onClick={visitGithubRepo} size="small" variant="contained" disableElevation sx={{bgcolor:'slategrey', borderRadius:'8px'}}>
+                view github repo
+            </Button>
+        </CardActions>
     </Card>
 }
 
