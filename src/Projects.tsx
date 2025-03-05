@@ -1,7 +1,7 @@
 import { Box, Card, CardContent, CardMedia, Chip, Stack, Typography } from "@mui/material"
 
 function Projects() {
-    const SMALL_SECTION_FONTSIZE = '30px';
+    // const SMALL_SECTION_FONTSIZE = '30px';
     const SMALL_SECTION_CONTENT_FONTSIZE = '20px';
 
     const pengChipLabels = [
@@ -11,6 +11,15 @@ function Projects() {
         <CustomChip label="RESTful APIs" />,
         <CustomChip label="Material UI" />,
         <CustomChip label="Vercel" />
+    ]
+
+    const novellyChipLabels = [
+        <CustomChip label="ReactJS" />,
+        <CustomChip label="Express.JS" />,
+        <CustomChip label="PicoCSS" />,
+        <CustomChip label="Google Books API" />,
+        <CustomChip label="RESTful APIs" />,
+        <CustomChip label="React Bootstrap" />,
     ]
 
     return <>
@@ -42,14 +51,24 @@ function Projects() {
                 </Box>
             </Stack>
             
-            <CustomCard 
-                imagePath="peng_logo.jpg" 
-                title="Peng" 
-                description="Peng is a no nonsense dating platform designed for those looking to make a serious connection.
-                Features include authentication via JWT (Json Web Tokens), real-time messaging, interactive
-                and dynamic swiping features."
-                customChipLabels={pengChipLabels}
-            />
+            <Stack spacing={4}>
+                <CustomCard 
+                    imagePath="/src/assets/peng_logo.jpg" 
+                    title="Peng" 
+                    description="Peng is a no nonsense dating platform designed for those looking to make a serious connection.
+                    Features include authentication via JWT (Json Web Tokens), real-time messaging, interactive
+                    and dynamic swiping features."
+                    customChipLabels={pengChipLabels}
+                />
+                <CustomCard 
+                    imagePath="/src/assets/novelly_logo.jpg" 
+                    title="Novelly" 
+                    description="NOVELLY is your ultimate library management system, designed to streamline tracking library 
+                    resources with features like book browsing, borrowing and returning, and adding personalized notes to 
+                    your wishlist favorites. It interacts with the Google Books API for book data."
+                    customChipLabels={novellyChipLabels}
+                />
+            </Stack>
         </Stack>
     </>
 }
