@@ -22,6 +22,15 @@ function Projects() {
         <CustomChip label="React Bootstrap" />,
     ]
 
+    const bredChipLabels = [
+        <CustomChip label="ReactJS" />,
+        <CustomChip label="Express.JS" />,
+        <CustomChip label="React Bootstrap" />,
+        <CustomChip label="Chart.JS" />,
+        <CustomChip label="RESTful APIs" />,
+        <CustomChip label="Material UI" />,
+    ]
+
     return <>
         <Stack sx={{
             marginTop:'40px'
@@ -67,6 +76,14 @@ function Projects() {
                     resources with features like book browsing, borrowing and returning, and adding personalized notes to 
                     your wishlist favorites. It interacts with the Google Books API for book data."
                     customChipLabels={novellyChipLabels}
+                />
+                <CustomCard 
+                    imagePath="/src/assets/bred_logo.jpg" 
+                    title="Bred" 
+                    description="Bred is the ultimate financial management platform for your organization, designed to 
+                    streamline expense tracking across projects, visualize spending patterns with dynamic charts, and 
+                    provide actionable insights to make data-driven decisions effortlessly."
+                    customChipLabels={bredChipLabels}
                 />
             </Stack>
         </Stack>
