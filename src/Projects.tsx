@@ -94,7 +94,7 @@ export default Projects
 
 function CustomCard({ imagePath, title, description, customChipLabels }:
         { imagePath:string, title:string, description:string, customChipLabels:React.ReactNode[] }) {
-    return <Card sx={{ width:'100%' }}>
+    return <Card variant="outlined" sx={{ width:'100%' }}>
         <CardMedia
             sx={{ height: 220 }}
             image={imagePath}

@@ -15,8 +15,8 @@ function App() {
     }}>
         <Header />
         <About />
-        <Techstack />
         <Projects />
+        <Techstack />
     </Stack>
 }
 
