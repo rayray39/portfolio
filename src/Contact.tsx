@@ -8,7 +8,7 @@ function Contact() {
             display:'flex',
             flexDirection:'column',
             alignItems:'center',
-            marginBottom:'20px',
+            marginBottom:'80px',
             marginTop:'80px'
         }}>
             <Chip label="Contact" sx={{width:'12%', bgcolor:'black', color:'white'}}/>
