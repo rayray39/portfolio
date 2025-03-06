@@ -15,7 +15,7 @@ function App() {
         alignItems: 'start',
         justifyContent:'center',
         // transform: 'translate(50%, 0)',
-        margin: '80px auto'
+        margin: 'auto'
     }}>
         <TopButtons />
         <Header />
