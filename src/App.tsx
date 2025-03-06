@@ -5,6 +5,7 @@ import About from "./About"
 import Projects from "./Projects"
 import Experience from "./Experience"
 import Contact from "./Contact"
+import TopButtons from "./TopButtons"
 
 function App() {
     return <Stack sx={{ 
@@ -13,8 +14,10 @@ function App() {
         flexDirection:'column',
         alignItems: 'start',
         justifyContent:'center',
-        transform: 'translate(50%, 0)',
+        // transform: 'translate(50%, 0)',
+        margin: '80px auto'
     }}>
+        <TopButtons />
         <Header />
         <About />
         <Projects />
