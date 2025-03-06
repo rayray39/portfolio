@@ -1,9 +1,10 @@
 import { Stack } from "@mui/material"
 import Header from "./Header"
 import About from "./About"
-import Techstack from "./Techstack"
+// import Techstack from "./Techstack"
 import Projects from "./Projects"
 import Experience from "./Experience"
+import Contact from "./Contact"
 
 function App() {
     return <Stack sx={{ 
@@ -18,7 +19,8 @@ function App() {
         <About />
         <Projects />
         <Experience />
-        <Techstack />
+        <Contact />
+        {/* <Techstack /> */}
     </Stack>
 }
 

@@ -37,7 +37,7 @@ function Projects() {
 
     return <>
         <Stack sx={{
-            marginTop:'40px'
+            marginTop:'80px'
         }}>
             <Stack sx={{
                 display:'flex',
