@@ -142,6 +142,12 @@ export default Experience
 function CustomTimeLineItem({ itemIcon, itemHeader, itemContent, itemFromDate, itemToDate }:
     { itemIcon:string, itemHeader:string, itemContent:string, itemFromDate:string, itemToDate:string}) {
 
+    // itemIcon: icon/emoji for the timeline dot
+    // itemHeader: header and title for the timeline item
+    // itemContent: description of the timeline item
+    // itemFromDate: start date of the timeline item
+    // itemToDate: end date of the timeline item
+
     return <>
         <TimelineItem>
             <TimelineOppositeContent
@@ -170,6 +176,12 @@ function CustomTimeLineItem({ itemIcon, itemHeader, itemContent, itemFromDate, i
 
 // card to display education / certification credentials
 function EducationCard({ title, description, imagePath, date }:{ title:string, description:string, imagePath:string, date:string}) {
+    
+    // title: title of credential
+    // description: description of credential
+    // imagePath: local file path to image or logo of credential
+    // date: date acquired
+    
     return <>
         <Box>
             <Stack direction={'row'} sx={{
