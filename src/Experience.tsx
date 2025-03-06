@@ -7,7 +7,7 @@ import TimelineOppositeContent, { timelineOppositeContentClasses } from "@mui/la
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import { Box, Chip, Stack, Typography } from "@mui/material";
 
-
+// experience and education section
 function Experience() {
     const SMALL_SECTION_FONTSIZE = '30px';
     const SMALL_SECTION_CONTENT_FONTSIZE = '20px';
@@ -75,6 +75,7 @@ function Experience() {
 
 export default Experience
 
+// timeline item for professional experience with custom styling
 function CustomTimeLineItem({ itemIcon, itemHeader, itemContent, itemFromDate, itemToDate }:
     { itemIcon:string, itemHeader:string, itemContent:string, itemFromDate:string, itemToDate:string}) {
 
