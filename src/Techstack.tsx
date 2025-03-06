@@ -1,5 +1,6 @@
 import { Box, Stack } from "@mui/material"
 
+// showcases techstack icons
 function Techstack() {
     const SMALL_SECTION_FONTSIZE = '30px';
     const TECHSTACK_ICON_WIDTH = '16%';

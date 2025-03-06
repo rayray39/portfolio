@@ -1,5 +1,6 @@
 import { Box, Stack } from "@mui/material"
 
+// about me section
 function About() {
     const SMALL_SECTION_FONTSIZE = '30px';
     const SMALL_SECTION_CONTENT_FONTSIZE = '20px';

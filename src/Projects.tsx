@@ -1,5 +1,6 @@
 import { Box, Button, Card, CardActions, CardContent, CardMedia, Chip, Stack, Typography } from "@mui/material"
 
+// featured personal projects section
 function Projects() {
     // const SMALL_SECTION_FONTSIZE = '30px';
     const SMALL_SECTION_CONTENT_FONTSIZE = '20px';
@@ -98,9 +99,16 @@ function Projects() {
 
 export default Projects
 
+// renders a card to display a project
 function CustomCard({ imagePath, title, description, customChipLabels, githubRepoLink }:
         { imagePath:string, title:string, description:string, customChipLabels:React.ReactNode[], githubRepoLink:string }) {
-
+    
+    // imagePath: path to locally stored image
+    // title: title of project
+    // description: description of project
+    // customChipLabels: a list of Chip components to display tech used
+    // githubRepoLink: link to github repo
+    
     const visitGithubRepo = () => {
         window.open(githubRepoLink, '_blank')
     }
@@ -130,6 +138,8 @@ function CustomCard({ imagePath, title, description, customChipLabels, githubRep
     </Card>
 }
 
+// displays a chip component with cusom styling
 function CustomChip({ label }: { label:string }) {
+    // label: label to be displayed on the chip 
     return <Chip label={label} sx={{bgcolor:'black', color:'white'}} />
 }
