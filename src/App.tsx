@@ -1,7 +1,6 @@
-import { Stack } from "@mui/material"
+import Stack from "@mui/material/Stack"
 import Header from "./Header"
 import About from "./About"
-// import Techstack from "./Techstack"
 import Projects from "./Projects"
 import Experience from "./Experience"
 import Contact from "./Contact"
@@ -14,7 +13,6 @@ function App() {
         flexDirection:'column',
         alignItems: 'start',
         justifyContent:'center',
-        // transform: 'translate(50%, 0)',
         margin: 'auto'
     }}>
         <TopButtons />
@@ -23,7 +21,6 @@ function App() {
         <Projects />
         <Experience />
         <Contact />
-        {/* <Techstack /> */}
     </Stack>
 }
 

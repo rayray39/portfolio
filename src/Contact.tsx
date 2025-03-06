@@ -1,4 +1,6 @@
-import { Box, Chip, Stack } from "@mui/material"
+import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
+import Chip from "@mui/material/Chip";
 
 function Contact() {
     const SMALL_SECTION_CONTENT_FONTSIZE = '20px';

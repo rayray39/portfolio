@@ -1,4 +1,6 @@
-import { Avatar, Box, Stack } from "@mui/material"
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
 
 // main header section - includes titles and avatar
 function Header() {
