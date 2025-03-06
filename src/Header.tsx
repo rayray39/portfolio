@@ -7,7 +7,9 @@ function Header() {
     const AVATAR_DIAMETER = 170;
 
     return <>
-        <Stack direction={"row"} >
+        <Stack direction={"row"} sx={{
+            marginTop:'120px'
+        }}>
             <Stack>
                 <Box sx={{
                     fontSize: MAIN_HEADER_FONTSIZE,
