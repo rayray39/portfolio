@@ -5,7 +5,7 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineOppositeContent, { timelineOppositeContentClasses } from "@mui/lab/TimelineOppositeContent";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import { Box, Chip, Stack, Typography } from "@mui/material";
+import { Avatar, Box, Chip, Stack, Typography } from "@mui/material";
 
 // experience and education section
 function Experience() {
@@ -50,7 +50,7 @@ function Experience() {
                 </Box>
                 <Timeline sx={{
                     [`& .${timelineOppositeContentClasses.root}`]: {
-                    flex: 0.3,
+                        flex: 0.4,
                     },
                 }}>
                     <CustomTimeLineItem 
@@ -68,6 +68,23 @@ function Experience() {
                         itemToDate="Aug 2023"
                     />
                 </Timeline>
+            </Box>
+
+            <Box>
+                <Box sx={{
+                    fontSize:SMALL_SECTION_FONTSIZE,
+                    fontWeight:'bold',
+                    marginBottom:'10px'
+                }}>
+                    Education
+                </Box>
+                <Stack>
+                    <EducationCard
+                        title="National University of Singapore"
+                        description="Bachelor of Engineering (Robotics Specialisation), Minor in Computer Science"
+                        date="2021-2025"
+                    />
+                </Stack>
             </Box>
         </Stack>
     );
@@ -102,5 +119,30 @@ function CustomTimeLineItem({ itemIcon, itemHeader, itemContent, itemFromDate, i
                 <Typography>{itemContent}</Typography>
             </TimelineContent>
         </TimelineItem>
+    </>
+}
+
+function EducationCard({ title, description, date }:{ title:string, description:string, date:string}) {
+    return <>
+        <Box>
+            <Stack direction={'row'} sx={{
+                display:'flex',
+                justifyContent:'space-around'
+            }}>
+                <Stack direction={'row'} spacing={2}>
+                    <Avatar alt="NUS" src="/src/assets/education/nus_logo.png" />
+                    <Stack>
+                        <Box sx={{
+                            fontSize: "20px",
+                            fontWeight:'bold'
+                        }}>
+                            {title}
+                        </Box>
+                        {description}
+                    </Stack>
+                </Stack>
+                {date}
+            </Stack>
+        </Box>
     </>
 }
