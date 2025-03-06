@@ -21,7 +21,7 @@ function Projects() {
         <CustomChip label="Material UI" />,
         <CustomChip label="Vercel" />
     ]
-    const pengGithub = 'https:github.com/rayray39/peng';
+    const pengGithub = 'https://github.com/rayray39/peng';
 
     const novellyChipLabels = [
         <CustomChip label="ReactJS" />,
@@ -31,7 +31,7 @@ function Projects() {
         <CustomChip label="RESTful APIs" />,
         <CustomChip label="React Bootstrap" />,
     ]
-    const novellyGithub = 'https:github.com/rayray39/novelly';
+    const novellyGithub = 'https://github.com/rayray39/novelly';
 
     const bredChipLabels = [
         <CustomChip label="ReactJS" />,
@@ -41,7 +41,7 @@ function Projects() {
         <CustomChip label="RESTful APIs" />,
         <CustomChip label="Material UI" />,
     ]
-    const bredGithub = 'https:github.com/rayray39/bred';
+    const bredGithub = 'https://github.com/rayray39/bred';
 
     return <>
         <Stack sx={{
