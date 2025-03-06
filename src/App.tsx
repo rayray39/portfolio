@@ -3,6 +3,7 @@ import Header from "./Header"
 import About from "./About"
 import Techstack from "./Techstack"
 import Projects from "./Projects"
+import Experience from "./Experience"
 
 function App() {
     return <Stack sx={{ 
@@ -16,6 +17,7 @@ function App() {
         <Header />
         <About />
         <Projects />
+        <Experience />
         <Techstack />
     </Stack>
 }
