@@ -29,7 +29,7 @@ function Experience() {
                     fontSize:'40px',
                     marginTop:'5px'
                 }}>
-                    Experience & Education
+                    Experience & Education 📜
                 </Box>
                 <Box sx={{
                     fontSize:SMALL_SECTION_CONTENT_FONTSIZE,
