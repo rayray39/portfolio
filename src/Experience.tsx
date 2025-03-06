@@ -56,14 +56,15 @@ function Experience() {
                     <CustomTimeLineItem 
                         itemIcon="🤖" 
                         itemHeader="Robotics Engineer, NDR Medical Technology"
-                        itemContent="some content"
+                        itemContent="GUI programming using PyQt5, testing of robotic arm and delta robot, designed bespoke
+                        medical cart and fan shroud."
                         itemFromDate="Dec 2023"
                         itemToDate="May 2024"
                     />
                     <CustomTimeLineItem 
                         itemIcon="🚁" 
                         itemHeader="Design Engineer, Avetics Global"
-                        itemContent="some content"
+                        itemContent="Led the design of a custom project, including development, prototyping, and testing."
                         itemFromDate="May 2023"
                         itemToDate="Aug 2023"
                     />
@@ -158,7 +159,7 @@ function CustomTimeLineItem({ itemIcon, itemHeader, itemContent, itemFromDate, i
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
-                <Typography variant="h6" component="span">
+                <Typography variant="h6" component="span" sx={{fontWeight:'bold'}}>
                     {itemHeader}
                 </Typography>
                 <Typography>{itemContent}</Typography>
