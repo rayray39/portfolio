@@ -74,7 +74,8 @@ function Experience() {
                 <Box sx={{
                     fontSize:SMALL_SECTION_FONTSIZE,
                     fontWeight:'bold',
-                    marginBottom:'10px'
+                    marginBottom:'10px',
+                    marginTop:'40px'
                 }}>
                     Education
                 </Box>
@@ -82,7 +83,51 @@ function Experience() {
                     <EducationCard
                         title="National University of Singapore"
                         description="Bachelor of Engineering (Robotics Specialisation), Minor in Computer Science"
+                        imagePath="/src/assets/education/nus_logo.png"
                         date="2021-2025"
+                    />
+                </Stack>
+            </Box>
+
+            <Box>
+                <Box sx={{
+                    fontSize:SMALL_SECTION_FONTSIZE,
+                    fontWeight:'bold',
+                    marginBottom:'10px',
+                    marginTop:'40px'
+                }}>
+                    Certifications
+                </Box>
+                <Stack spacing={2}>
+                    <EducationCard
+                        title="React Basics"
+                        description="Meta"
+                        imagePath="/src/assets/education/meta_logo.jpg"
+                        date="2024"
+                    />
+                    <EducationCard
+                        title="Backend Development with .NET"
+                        description="Microsoft"
+                        imagePath="/src/assets/education/microsoft_logo.png"
+                        date="2024"
+                    />
+                    <EducationCard
+                        title="Introduction to Programming with C#"
+                        description="Microsoft"
+                        imagePath="/src/assets/education/microsoft_logo.png"
+                        date="2024"
+                    />
+                    <EducationCard
+                        title="CS50's Web Programming with Python and JavaScript"
+                        description="CS50, Harvard"
+                        imagePath="/src/assets/education/harvard_logo.png"
+                        date="2024"
+                    />
+                    <EducationCard
+                        title="The Complete Java Certification Course"
+                        description="Udemy"
+                        imagePath="/src/assets/education/udemy_logo.png"
+                        date="2023"
                     />
                 </Stack>
             </Box>
@@ -122,15 +167,15 @@ function CustomTimeLineItem({ itemIcon, itemHeader, itemContent, itemFromDate, i
     </>
 }
 
-function EducationCard({ title, description, date }:{ title:string, description:string, date:string}) {
+function EducationCard({ title, description, imagePath, date }:{ title:string, description:string, imagePath:string, date:string}) {
     return <>
         <Box>
             <Stack direction={'row'} sx={{
                 display:'flex',
-                justifyContent:'space-around'
+                justifyContent:'stretch'
             }}>
                 <Stack direction={'row'} spacing={2}>
-                    <Avatar alt="NUS" src="/src/assets/education/nus_logo.png" />
+                    <Avatar alt="NUS" src={imagePath} />
                     <Stack>
                         <Box sx={{
                             fontSize: "20px",
