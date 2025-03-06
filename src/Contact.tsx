@@ -26,7 +26,7 @@ function Contact() {
                 marginTop: '10px',
                 width:'70%'
             }}>
-                Let's connect! Feel free to reach out via LinkedIn and I'll get back to you as soon as I can.
+                Let's connect! Feel free to reach out via <a href="https://www.linkedin.com/in/rayray39/">LinkedIn</a> and I'll get back to you as soon as I can.
             </Box>
         </Stack>
     </>
