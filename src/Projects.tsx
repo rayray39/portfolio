@@ -131,7 +131,7 @@ function CustomCard({ imagePath, title, description, customChipLabels, githubRep
             </Stack>
         </CardContent>
         <CardActions>
-            <Button onClick={visitGithubRepo} size="small" variant="contained" disableElevation sx={{bgcolor:'slategrey', borderRadius:'8px'}}>
+            <Button onClick={visitGithubRepo} size="small" variant="contained" disableElevation sx={{bgcolor:'black', borderRadius:'12px'}}>
                 view github repo
             </Button>
         </CardActions>
