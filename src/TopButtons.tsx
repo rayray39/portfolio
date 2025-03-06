@@ -7,11 +7,13 @@ function TopButtons() {
         position:'fixed',
         width: '100%',
         top:'2%',
-        left:'40%',
-        zIndex: 1000
+        left:'42%',
+        zIndex: 1000,
     }}>
-        <ButtonGroup variant="contained" aria-label="Basic button group">
-            <Button>Home</Button>
+        <ButtonGroup disableElevation variant="contained" aria-label="Basic button group" sx={{
+            '& .MuiButtonGroup-grouped': { height:'46px' }
+        }} >
+            <Button>🏠</Button>
             <Button>Github</Button>
             <Button>LinkedIn</Button>
         </ButtonGroup>
