@@ -18,7 +18,7 @@ function Contact() {
                 fontSize:'40px',
                 marginTop:'5px'
             }}>
-                Get In Touch
+                Get In Touch ✌🏼
             </Box>
             <Box sx={{
                 fontSize:SMALL_SECTION_CONTENT_FONTSIZE,
