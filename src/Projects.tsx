@@ -74,7 +74,7 @@ function Projects() {
             
             <Stack spacing={4}>
                 <CustomCard 
-                    imagePath="/src/assets/projects/peng_logo.jpg" 
+                    imagePath="/images/peng_logo.jpg" 
                     title="Peng" 
                     description="Peng is a no nonsense dating platform designed for those looking to make a serious connection.
                     Features include authentication via JWT (Json Web Tokens), real-time messaging, interactive
@@ -83,7 +83,7 @@ function Projects() {
                     githubRepoLink={pengGithub}
                 />
                 <CustomCard 
-                    imagePath="/src/assets/projects/novelly_logo.jpg" 
+                    imagePath="/images/novelly_logo.jpg" 
                     title="Novelly" 
                     description="NOVELLY is your ultimate library management system, designed to streamline tracking library 
                     resources with features like book browsing, borrowing and returning, and adding personalized notes to 
@@ -92,7 +92,7 @@ function Projects() {
                     githubRepoLink={novellyGithub}
                 />
                 <CustomCard 
-                    imagePath="/src/assets/projects/bred_logo.jpg" 
+                    imagePath="/images/bred_logo.jpg" 
                     title="Bred" 
                     description="Bred is the ultimate financial management platform for your organization, designed to 
                     streamline expense tracking across projects, visualize spending patterns with dynamic charts, and 

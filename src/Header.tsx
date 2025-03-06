@@ -28,7 +28,7 @@ function Header() {
             </Stack>
 
             <Box>
-                <Avatar sx={{ width:AVATAR_DIAMETER, height:AVATAR_DIAMETER}} alt="Rayner Lim" src="./src/assets/rayray39_2.jpg" />
+                <Avatar sx={{ width:AVATAR_DIAMETER, height:AVATAR_DIAMETER}} alt="Rayner Lim" src="/images/rayray39_2.jpg" />
             </Box>
         </Stack>
     </>

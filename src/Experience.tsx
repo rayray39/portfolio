@@ -88,7 +88,7 @@ function Experience() {
                     <EducationCard
                         title="National University of Singapore"
                         description="Bachelor of Engineering (Robotics Specialisation), Minor in Computer Science"
-                        imagePath="/src/assets/education/nus_logo.png"
+                        imagePath="/images/nus_logo.png"
                         date="2021-2025"
                     />
                 </Stack>
@@ -107,31 +107,31 @@ function Experience() {
                     <EducationCard
                         title="React Basics"
                         description="Meta"
-                        imagePath="/src/assets/education/meta_logo.jpg"
+                        imagePath="/images/meta_logo.jpg"
                         date="2024"
                     />
                     <EducationCard
                         title="Backend Development with .NET"
                         description="Microsoft"
-                        imagePath="/src/assets/education/microsoft_logo.png"
+                        imagePath="/images/microsoft_logo.png"
                         date="2024"
                     />
                     <EducationCard
                         title="Introduction to Programming with C#"
                         description="Microsoft"
-                        imagePath="/src/assets/education/microsoft_logo.png"
+                        imagePath="/images/microsoft_logo.png"
                         date="2024"
                     />
                     <EducationCard
                         title="CS50's Web Programming with Python and JavaScript"
                         description="CS50, Harvard"
-                        imagePath="/src/assets/education/harvard_logo.png"
+                        imagePath="/images/harvard_logo.png"
                         date="2024"
                     />
                     <EducationCard
                         title="The Complete Java Certification Course"
                         description="Udemy"
-                        imagePath="/src/assets/education/udemy_logo.png"
+                        imagePath="/images/udemy_logo.png"
                         date="2023"
                     />
                 </Stack>
