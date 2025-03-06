@@ -167,12 +167,13 @@ function CustomTimeLineItem({ itemIcon, itemHeader, itemContent, itemFromDate, i
     </>
 }
 
+// card to display education / certification credentials
 function EducationCard({ title, description, imagePath, date }:{ title:string, description:string, imagePath:string, date:string}) {
     return <>
         <Box>
             <Stack direction={'row'} sx={{
                 display:'flex',
-                justifyContent:'stretch'
+                justifyContent:'space-between'
             }}>
                 <Stack direction={'row'} spacing={2}>
                     <Avatar alt="NUS" src={imagePath} />
