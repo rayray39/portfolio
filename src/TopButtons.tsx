@@ -5,7 +5,7 @@ import ButtonGroup from "@mui/material/ButtonGroup"
 function TopButtons() {
 
     const goToHome = () => {
-
+        window.scrollTo({ top:0, behavior:'smooth'})
     }
 
     const goToGithub = () => {
@@ -28,7 +28,7 @@ function TopButtons() {
         <ButtonGroup disableElevation variant="contained" aria-label="Basic button group" sx={{
             '& .MuiButtonGroup-grouped': { height:'46px' }
         }} >
-            <Button>🏠</Button>
+            <Button onClick={goToHome}>🏠</Button>
             <Button onClick={goToGithub}>Github</Button>
             <Button onClick={goToLinkedin}>LinkedIn</Button>
         </ButtonGroup>
