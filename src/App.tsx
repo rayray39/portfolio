@@ -7,7 +7,8 @@ import Contact from "./Contact"
 import TopButtons from "./TopButtons"
 
 function App() {
-    return <Stack sx={{ 
+    return <>
+        <Stack sx={{ 
         width: '50%',
         display:'flex',
         flexDirection:'column',
@@ -22,6 +23,7 @@ function App() {
         <Experience />
         <Contact />
     </Stack>
+    </>
 }
 
 export default App

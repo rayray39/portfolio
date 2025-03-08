@@ -20,12 +20,12 @@ function TopButtons() {
 
     return <Box sx={{
         position:'fixed',
-        width: '100%',
         top:'2%',
-        left:'42%',
+        left:'50%',
+        transform:'translateX(-50%)',
         zIndex: 1000,
     }}>
-        <ButtonGroup disableElevation variant="contained" aria-label="Basic button group" sx={{
+        <ButtonGroup id='top-button-group' disableElevation variant="contained" aria-label="Basic button group" sx={{
             '& .MuiButtonGroup-grouped': { height:'46px' }
         }} >
             <Button onClick={goToHome}>🏠</Button>
