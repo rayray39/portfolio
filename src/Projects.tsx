@@ -79,7 +79,7 @@ function Projects() {
                     description="Peng is a no nonsense dating platform designed for those looking to make a serious connection.
                     Features include authentication via JWT (Json Web Tokens), real-time messaging, interactive
                     and dynamic swiping features."
-                    customChipLabels={[]}
+                    techStack="ReactJS, Express.JS, SQLite3, Material UI, RESTful APIs, Vercel"
                     githubRepoLink={pengGithub}
                 />
                 <CustomCard 
@@ -88,7 +88,7 @@ function Projects() {
                     description="NOVELLY is your ultimate library management system, designed to streamline tracking library 
                     resources with features like book browsing, borrowing and returning, and adding personalized notes to 
                     your wishlist favorites. It interacts with the Google Books API for book data."
-                    customChipLabels={[]}
+                    techStack="ReactJS, Express.JS, PicoCSS, Google Books API, RESTful APIs, React Bootstrap"
                     githubRepoLink={novellyGithub}
                 />
                 <CustomCard 
@@ -97,7 +97,7 @@ function Projects() {
                     description="Bred is the ultimate financial management platform for your organization, designed to 
                     streamline expense tracking across projects, visualize spending patterns with dynamic charts, and 
                     provide actionable insights to make data-driven decisions effortlessly."
-                    customChipLabels={[]}
+                    techStack="ReactJS, Express.JS, Chart.JS, RESTful APIs, React Bootstrap, Material UI"
                     githubRepoLink={bredGithub}
                 />
             </Stack>
@@ -108,13 +108,13 @@ function Projects() {
 export default Projects
 
 // renders a card to display a project
-function CustomCard({ imagePath, title, description, customChipLabels, githubRepoLink }:
-        { imagePath:string, title:string, description:string, customChipLabels:React.ReactNode[], githubRepoLink:string }) {
+function CustomCard({ imagePath, title, description, techStack, githubRepoLink }:
+        { imagePath:string, title:string, description:string, techStack:string, githubRepoLink:string }) {
     
     // imagePath: path to locally stored image
     // title: title of project
     // description: description of project
-    // customChipLabels: a list of Chip components to display tech used
+    // customChipLabels: a list of Chip components to display tech used / React.ReactNode[]
     // githubRepoLink: link to github repo
     
     const visitGithubRepo = () => {
@@ -137,6 +137,9 @@ function CustomCard({ imagePath, title, description, customChipLabels, githubRep
             {/* <Stack direction={'row'} spacing={2} sx={{ marginTop:'10px' }}>
                 {customChipLabels}
             </Stack> */}
+            <Typography variant="body2" sx={{ color: 'text.secondary', marginTop:'20px' }}>
+                {techStack}
+            </Typography>
         </CardContent>
         <CardActions>
             <Button onClick={visitGithubRepo} size="small" variant="contained" disableElevation sx={{bgcolor:'black', borderRadius:'12px'}}>
