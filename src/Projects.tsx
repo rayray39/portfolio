@@ -79,7 +79,7 @@ function Projects() {
                     description="Peng is a no nonsense dating platform designed for those looking to make a serious connection.
                     Features include authentication via JWT (Json Web Tokens), real-time messaging, interactive
                     and dynamic swiping features."
-                    customChipLabels={pengChipLabels}
+                    customChipLabels={[]}
                     githubRepoLink={pengGithub}
                 />
                 <CustomCard 
@@ -88,7 +88,7 @@ function Projects() {
                     description="NOVELLY is your ultimate library management system, designed to streamline tracking library 
                     resources with features like book browsing, borrowing and returning, and adding personalized notes to 
                     your wishlist favorites. It interacts with the Google Books API for book data."
-                    customChipLabels={novellyChipLabels}
+                    customChipLabels={[]}
                     githubRepoLink={novellyGithub}
                 />
                 <CustomCard 
@@ -97,7 +97,7 @@ function Projects() {
                     description="Bred is the ultimate financial management platform for your organization, designed to 
                     streamline expense tracking across projects, visualize spending patterns with dynamic charts, and 
                     provide actionable insights to make data-driven decisions effortlessly."
-                    customChipLabels={bredChipLabels}
+                    customChipLabels={[]}
                     githubRepoLink={bredGithub}
                 />
             </Stack>
@@ -134,9 +134,9 @@ function CustomCard({ imagePath, title, description, customChipLabels, githubRep
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                 {description}
             </Typography>
-            <Stack direction={'row'} spacing={2} sx={{ marginTop:'10px' }}>
+            {/* <Stack direction={'row'} spacing={2} sx={{ marginTop:'10px' }}>
                 {customChipLabels}
-            </Stack>
+            </Stack> */}
         </CardContent>
         <CardActions>
             <Button onClick={visitGithubRepo} size="small" variant="contained" disableElevation sx={{bgcolor:'black', borderRadius:'12px'}}>
@@ -146,7 +146,7 @@ function CustomCard({ imagePath, title, description, customChipLabels, githubRep
     </Card>
 }
 
-// displays a chip component with cusom styling
+// displays a chip component with custom styling
 function CustomChip({ label }: { label:string }) {
     // label: label to be displayed on the chip 
     return <Chip label={label} sx={{bgcolor:'black', color:'white'}} />
