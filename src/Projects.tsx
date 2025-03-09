@@ -13,34 +13,34 @@ function Projects() {
     // const SMALL_SECTION_FONTSIZE = '30px';
     const SMALL_SECTION_CONTENT_FONTSIZE = '20px';
 
-    const pengChipLabels = [
-        <CustomChip label="ReactJS" />,
-        <CustomChip label="Express.JS" />,
-        <CustomChip label="SQLite3" />,
-        <CustomChip label="RESTful APIs" />,
-        <CustomChip label="Material UI" />,
-        <CustomChip label="Vercel" />
-    ]
+    // const pengChipLabels = [
+    //     <CustomChip label="ReactJS" />,
+    //     <CustomChip label="Express.JS" />,
+    //     <CustomChip label="SQLite3" />,
+    //     <CustomChip label="RESTful APIs" />,
+    //     <CustomChip label="Material UI" />,
+    //     <CustomChip label="Vercel" />
+    // ]
     const pengGithub = 'https://github.com/rayray39/peng';
 
-    const novellyChipLabels = [
-        <CustomChip label="ReactJS" />,
-        <CustomChip label="Express.JS" />,
-        <CustomChip label="PicoCSS" />,
-        <CustomChip label="Google Books API" />,
-        <CustomChip label="RESTful APIs" />,
-        <CustomChip label="React Bootstrap" />,
-    ]
+    // const novellyChipLabels = [
+    //     <CustomChip label="ReactJS" />,
+    //     <CustomChip label="Express.JS" />,
+    //     <CustomChip label="PicoCSS" />,
+    //     <CustomChip label="Google Books API" />,
+    //     <CustomChip label="RESTful APIs" />,
+    //     <CustomChip label="React Bootstrap" />,
+    // ]
     const novellyGithub = 'https://github.com/rayray39/novelly';
 
-    const bredChipLabels = [
-        <CustomChip label="ReactJS" />,
-        <CustomChip label="Express.JS" />,
-        <CustomChip label="React Bootstrap" />,
-        <CustomChip label="Chart.JS" />,
-        <CustomChip label="RESTful APIs" />,
-        <CustomChip label="Material UI" />,
-    ]
+    // const bredChipLabels = [
+    //     <CustomChip label="ReactJS" />,
+    //     <CustomChip label="Express.JS" />,
+    //     <CustomChip label="React Bootstrap" />,
+    //     <CustomChip label="Chart.JS" />,
+    //     <CustomChip label="RESTful APIs" />,
+    //     <CustomChip label="Material UI" />,
+    // ]
     const bredGithub = 'https://github.com/rayray39/bred';
 
     return <>
@@ -150,7 +150,7 @@ function CustomCard({ imagePath, title, description, techStack, githubRepoLink }
 }
 
 // displays a chip component with custom styling
-function CustomChip({ label }: { label:string }) {
-    // label: label to be displayed on the chip 
-    return <Chip label={label} sx={{bgcolor:'black', color:'white'}} />
-}
+// function CustomChip({ label }: { label:string }) {
+//     // label: label to be displayed on the chip 
+//     return <Chip label={label} sx={{bgcolor:'black', color:'white'}} />
+// }
