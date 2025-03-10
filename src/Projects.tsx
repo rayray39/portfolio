@@ -5,7 +5,6 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Chip from "@mui/material/Chip";
 import Typography from "@mui/material/Typography";
 
 // featured personal projects section
@@ -53,7 +52,7 @@ function Projects() {
                 alignItems:'center',
                 marginBottom:'40px'
             }}>
-                <Chip label="My Projects" sx={{width:'16%', bgcolor:'black', color:'white'}}/>
+                <Button sx={{bgcolor:'black', color:'white', borderRadius:'18px', paddingLeft:'20px', paddingRight:'20px'}}>My Projects</Button>
                 <Box sx={{
                     textAlign:'center',
                     fontWeight:'bold',
