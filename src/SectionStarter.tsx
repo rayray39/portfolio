@@ -1,10 +1,8 @@
 import Box from "@mui/material/Box"
 import Button from "@mui/material/Button"
 
-function SectionStarter({ buttonContent, sectionHeader, sectionContent }:{buttonContent:string, sectionHeader:string, sectionContent:string}) {
+function SectionStarter({ buttonContent, sectionHeader, sectionContent }:{buttonContent:string, sectionHeader:string, sectionContent:React.ReactNode}) {
     const SMALL_SECTION_CONTENT_FONTSIZE = '20px';
-    // 
-    // 
 
     return <>
         <Button size="small" sx={{
