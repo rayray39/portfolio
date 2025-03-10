@@ -14,7 +14,6 @@ import SectionStarter from "./SectionStarter";
 // experience and education section
 function Experience() {
     const SMALL_SECTION_FONTSIZE = '30px';
-    const SMALL_SECTION_CONTENT_FONTSIZE = '20px';
 
     return (
         <Stack sx={{
