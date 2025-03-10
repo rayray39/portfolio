@@ -2,7 +2,6 @@ import Stack from "@mui/material/Stack";
 import SectionStarter from "./SectionStarter";
 
 function Contact() {
-    const SMALL_SECTION_CONTENT_FONTSIZE = '20px';
 
     return <>
         <Stack sx={{
