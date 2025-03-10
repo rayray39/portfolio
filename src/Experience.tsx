@@ -8,8 +8,8 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Avatar from "@mui/material/Avatar";
-import Chip from "@mui/material/Chip";
 import Typography from "@mui/material/Typography";
+import SectionStarter from "./SectionStarter";
 
 // experience and education section
 function Experience() {
@@ -26,23 +26,11 @@ function Experience() {
                 alignItems:'center',
                 marginBottom:'40px'
             }}>
-                <Chip label="Experience & Education" sx={{width:'24%', bgcolor:'black', color:'white'}}/>
-                <Box sx={{
-                    textAlign:'center',
-                    fontWeight:'bold',
-                    fontSize:'40px',
-                    marginTop:'5px'
-                }}>
-                    Experience & Education 📜
-                </Box>
-                <Box sx={{
-                    fontSize:SMALL_SECTION_CONTENT_FONTSIZE,
-                    textAlign:'center',
-                    marginTop: '10px',
-                    width:'70%'
-                }}>
-                    Here's a summary of my professional journey and educational background in engineering.
-                </Box>
+                <SectionStarter 
+                    buttonContent="Experience & Education" 
+                    sectionHeader="Experience & Education 📜" 
+                    sectionContent="Here's a summary of my professional journey and educational background in engineering."
+                />
             </Stack>
             
             <Box>

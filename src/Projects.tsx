@@ -1,4 +1,3 @@
-import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
@@ -6,12 +5,10 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
+import SectionStarter from "./SectionStarter";
 
 // featured personal projects section
 function Projects() {
-    // const SMALL_SECTION_FONTSIZE = '30px';
-    const SMALL_SECTION_CONTENT_FONTSIZE = '20px';
-
     // const pengChipLabels = [
     //     <CustomChip label="ReactJS" />,
     //     <CustomChip label="Express.JS" />,
@@ -52,23 +49,11 @@ function Projects() {
                 alignItems:'center',
                 marginBottom:'40px'
             }}>
-                <Button sx={{bgcolor:'black', color:'white', borderRadius:'18px', paddingLeft:'20px', paddingRight:'20px'}}>My Projects</Button>
-                <Box sx={{
-                    textAlign:'center',
-                    fontWeight:'bold',
-                    fontSize:'40px',
-                    marginTop:'5px'
-                }}>
-                    Featured Projects 👨‍💻
-                </Box>
-                <Box sx={{
-                    fontSize:SMALL_SECTION_CONTENT_FONTSIZE,
-                    textAlign:'center',
-                    marginTop: '10px',
-                    width:'70%'
-                }}>
-                    I build projects from 0 to 1, turning ideas into reality. Take a look at some of my favourite projects below.
-                </Box>
+                <SectionStarter 
+                    buttonContent="My Projects" 
+                    sectionHeader="Featured Projects 👨‍💻"
+                    sectionContent="I build projects from 0 to 1, turning ideas into reality. Take a look at some of my favourite projects below."
+                />
             </Stack>
             
             <Stack spacing={4}>
