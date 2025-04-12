@@ -39,6 +39,8 @@ function Projects() {
     // ]
     const bredGithub = 'https://github.com/rayray39/bred';
 
+    const feelemoGithub = 'https://github.com/rayray39/feelemo';
+
     return <>
         <Stack sx={{
             marginTop:'80px'
@@ -65,6 +67,15 @@ function Projects() {
                     and dynamic swiping features."
                     techStack="ReactJS, Express.JS, SQLite3, Material UI, RESTful APIs, Vercel"
                     githubRepoLink={pengGithub}
+                />
+                <CustomCard 
+                    imagePath="/images/feelemo.jpg" 
+                    title="Feelemo" 
+                    description="Feelemo is a simple, open space where anyone can freely express their thoughts and emotions 
+                    without needing to create an account. This lightweight journal platform is built for users who just 
+                    want to write and connect."
+                    techStack="ReactJS, Express.JS, SQLite3, Material UI, RESTful APIs"
+                    githubRepoLink={feelemoGithub}
                 />
                 <CustomCard 
                     imagePath="/images/novelly_logo.jpg" 
