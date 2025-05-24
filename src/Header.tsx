@@ -23,7 +23,7 @@ function Header() {
                     fontSize: SUB_HEADER_FONTSIZE,
                     width:'80%'
                 }}>
-                    Engineer focusing on software development and product. Happy reading! 😇
+                    Engineer focusing on software development and robotics. Happy reading! 😇
                 </Box>
             </Stack>
 

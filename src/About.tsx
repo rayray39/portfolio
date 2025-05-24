@@ -19,9 +19,10 @@ function About() {
             <Box sx={{
                 fontSize: SMALL_SECTION_CONTENT_FONTSIZE
             }}>
-                I'm passionate about building innovative fullstack applications and robotics development.
-                I've a solid background in engineering, computer science and robotics.
-                I'm currently working on <a href="https://github.com/rayray39/peng">Peng, a no nonsense dating platform for the serious</a>.
+                I'm a developer with a background in robotics and computer science. 
+                I love building full-stack web apps and exploring computer vision. 
+                For my final year thesis, I developed a computer vision pipeline for octopus arm segmentation and kinematics extraction — 
+                a project that deepened my interest in visual systems and problem-solving through tech.
             </Box>
         </Stack>
     </>
